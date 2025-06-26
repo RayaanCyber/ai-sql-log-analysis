@@ -1,0 +1,27 @@
+# SQL Prompt Examples – AI Log Analysis Tool
+
+This file contains prompt templates written in plain English. These can be used with large language models (LLMs) like ChatGPT, Claude, or Gemini to generate SQL queries that analyze system logs.
+
+Each prompt is based on my sample_logs.csv file.
+
+---
+
+## Prompt 1: Failed Login Attempts (Last 7 Days)
+
+Write a SQL query that selects all rows from a table called `logs` where the `status` is 'failed_login' and the `timestamp` is within the last 7 days. The table includes these columns: `id`, `user_id`, `ip_address`, `action`, `timestamp`, `status`.
+
+The results should be sorted with the newest entry first.
+
+---
+
+## Prompt 2: Admin Panel Access by IP
+
+Write a SQL query that shows all unique IP addresses that accessed the admin panel in the last 30 days. The table is called `logs`, and the column for the action is named `action`, which may contain the value 'admin_access'. Use the `timestamp` to filter and sort.
+
+---
+
+## Prompt 3: Daily Login Attempt Count
+
+Write a SQL query that counts how many login attempts happened each day over the past 30 days. The table is called `logs`, and the relevant action is 'login_attempt`. Use the `timestamp` column to group by date and return counts.
+
+The output should show the date and number of attempts for each day.
