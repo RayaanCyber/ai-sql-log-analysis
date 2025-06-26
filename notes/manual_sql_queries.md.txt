@@ -1,0 +1,24 @@
+# Manual SQL Queries – AI + SQL Log Analysis Tool
+
+This file includes basic SQL queries that I wrote manually to analyze log data. These examples help me understand how to ask important security-related questions using SQL.
+
+---
+
+## Query 1: Find All Failed Login Attempts in the Last 7 Days
+
+SELECT * FROM logs
+WHERE status = 'failed_login'
+AND timestamp >= DATE('now', '-7 days')
+ORDER BY timestamp DESC;
+
+## What This Query Does:
+
+- SELECT * FROM logs: Pulls all data from the logs table
+- WHERE status = 'failed_login': Filters only the failed login attempts
+- AND timestamp >= DATE('now', '-7 days'): Only shows data from the last 7 days
+- ORDER BY timestamp DESC: Sorts the results with the newest event first
+
+## Why This Is Useful in Cybersecurity:
+
+This type of query is often used by security teams to detect signs of a brute-force attack, where someone tries to guess a password by repeatedly failing to log in. If the number of failed logins spikes in a short period, it’s a red flag.
+
