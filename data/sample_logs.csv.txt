@@ -1,0 +1,21 @@
+## Sample Log:
+
+id,user_id,ip_address,action,timestamp,status
+1,user23,192.168.1.20,login_attempt,2024-06-01 12:34:56,failed_login
+2,admin01,10.0.0.5,admin_access,2024-06-01 13:00:01,success
+3,user12,192.168.1.33,login_attempt,2024-06-02 08:11:21,failed_login
+4,user44,10.10.10.22,login_attempt,2024-06-03 10:04:30,success
+5,admin01,10.0.0.5,admin_access,2024-06-03 11:50:45,success
+6,user23,192.168.1.20,login_attempt,2024-06-04 07:23:19,failed_login
+
+
+## Description of entries:
+
+'id'= Unique entry number = for sorting, referencing
+'user_id' = Username = who is logging in
+'ip_address' = Source of login = can identify attackers/insiders
+'action' = Type of action = login or admin access
+'timestamp' = When it happened = helps detect spikes/patterns
+'status' = Outcome = success/failure
+
+
