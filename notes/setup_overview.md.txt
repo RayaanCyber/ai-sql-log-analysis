@@ -1,0 +1,30 @@
+# Log File Overview 
+
+This file contains simulated login activity for a small organization’s system. It was created as part of my AI + SQL Log Analysis Tool project to practice detecting suspicious user behavior using SQL and generative AI prompts.
+
+---
+
+## Table Name:
+Assume the log data is stored in a table called `logs`.
+
+---
+
+## Real-World Use:
+
+This kind of data is used by cybersecurity teams to:
+
+- Identify failed login attempts and brute-force attacks
+- Monitor who is accessing the admin panel and when
+- Track user login behavior across time
+- Investigate IP addresses associated with suspicious activity
+
+---
+
+## How I’ll Use This Data:
+
+I will use this log file to:
+- Write SQL queries manually to detect suspicious patterns
+- Create natural language prompts for an AI model like ChatGPT to generate SQL queries
+- Compare my queries with AI-generated ones and document the differences
+
+This shows my ability to understand log structure, think like an analyst, and use AI tools for automation and investigation.
